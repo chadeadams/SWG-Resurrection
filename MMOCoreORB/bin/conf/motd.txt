@@ -1,1 +1,6 @@
-Please dont forget to hard restart your clients if the server crashed/restarted.
++=================================================+
+|            -=SWG-Resurrection=-                 |
++=================================================+
+For in game assistance, email nugax. For out of
+game assistance, visit our SWG Resurrection
+website: http://www.swgresurrection.com.
