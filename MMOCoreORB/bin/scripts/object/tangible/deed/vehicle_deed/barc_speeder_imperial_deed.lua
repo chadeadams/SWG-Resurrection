@@ -41,27 +41,24 @@
 --this exception also makes it possible to release a modified version 
 
 
+object_tangible_deed_vehicle_deed_barc_speeder_imperial_deed = object_tangible_deed_vehicle_deed_shared_barc_speeder_imperial_deed:new {
 
---Children folder includes
+	templateType = VEHICLEDEED,	
+	
+	
+	controlDeviceObjectTemplate = "object/intangible/vehicle/barc_speeder_imperial_pcd.iff",
+	generatedObjectTemplate = "object/mobile/vehicle/barc_speeder_imperial.iff",
 
--- Server Objects
-includeFile("tangible/deed/vehicle_deed/jetpack_deed.lua")
-includeFile("tangible/deed/vehicle_deed/landspeeder_av21_deed.lua")
-includeFile("tangible/deed/vehicle_deed/landspeeder_x31_deed.lua")
-includeFile("tangible/deed/vehicle_deed/landspeeder_x34_deed.lua")
-includeFile("tangible/deed/vehicle_deed/speederbike_deed.lua")
-includeFile("tangible/deed/vehicle_deed/speederbike_flash_deed.lua")
-includeFile("tangible/deed/vehicle_deed/speederbike_swoop_deed.lua")
-includeFile("tangible/deed/vehicle_deed/vehicle_deed_base.lua")
-includeFile("tangible/deed/vehicle_deed/vehicular_prototype_bike_deed.lua")
-includeFile("tangible/deed/vehicle_deed/vehicular_prototype_deed.lua")
+	numberExperimentalProperties = {1, 1, 1},
+	experimentalProperties = {"XX", "XX", "SR"},
+	experimentalWeights = {1, 1, 1},
+	experimentalGroupTitles = {"null", "null", "exp_durability"},
+	experimentalSubGroupTitles = {"null", "null", "hit_points"},
+	experimentalMin = {0, 0, 1800},
+	experimentalMax = {0, 0, 8000},
+	experimentalPrecision = {0, 0, 0},
+	experimentalCombineType = {0, 0, 1},
 
---Added vehicles
-includeFile("tangible/deed/vehicle_deed/sith_speeder.lua")
-includeFile("tangible/deed/vehicle_deed/barc_speeder_deed.lua")
-includeFile("tangible/deed/vehicle_deed/barc_speeder_imperial_deed.lua")
-includeFile("tangible/deed/vehicle_deed/barc_speeder_rebel_deed.lua")
-includeFile("tangible/deed/vehicle_deed/pod_racer_one_deed.lua")
-includeFile("tangible/deed/vehicle_deed/pod_racer_two_deed.lua")
+}
 
-
+ObjectTemplates:addTemplate(object_tangible_deed_vehicle_deed_barc_speeder_imperial_deed, "object/tangible/deed/vehicle_deed/barc_speeder_imperial_deed.iff")
